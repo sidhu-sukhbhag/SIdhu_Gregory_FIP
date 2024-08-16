@@ -825,3 +825,34 @@ a:focus {
     height: 50px;
     width: 50px;
 }
+
+.heading_ingredient_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.heading_ingredient_container h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.heading_center {
+  text-align: center;
+}
+
+
+
+.centered-bold {
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  height: 100%; 
+
+}
