@@ -5,13 +5,11 @@ body {
   color: #101010;
   background-color: #ffffff;
 }
-
 .heading_container{
    h2 {
     text-align: center;
    }
 }
-
 .layout_padding {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -92,6 +90,7 @@ body {
 #navbarSupportedContent.innerpage_navbar .nav-item.active .nav-link {
   background-color: #f4f5f6;
 }
+
 
 #navbarSupportedContent .navbar-nav .nav-link {
   padding: 5px 25px;
@@ -206,7 +205,6 @@ a:focus {
           transform: rotate(360deg);
 }
 
-
 .custom_nav-container .navbar-toggler[aria-expanded="true"] span {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -289,8 +287,41 @@ a:focus {
   text-transform: uppercase;
 }
 
+.slider_section .detail-box a:hover {
+  background-color: white;
+  color: #db4566;
+}
 
+.slider_section .carousel_btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ff0080;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: -25px;
+  left: 5%;
+  padding: 7px 10px;
+  border-radius: 5px 5px 0 0;
+}
 
+.slider_section .carousel_btn-box img {
+  margin: 0 10px;
+}
+
+.slider_section .carousel_btn-box .carousel-control-prev,
+.slider_section .carousel_btn-box .carousel-control-next {
+  position: unset;
+  height: 25px;
+  width: 25px;
+  background-repeat: no-repeat;
+  opacity: 1;
+  background-position: center;
+  color: #000000;
+  font-size: 14px;
+}
 
 .shop_section .heading_container {
   margin-bottom: 20px;
@@ -306,7 +337,6 @@ a:focus {
 .shop_section .box a {
   color: #000000;
 }
-
 .shop_section .box .img-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,6 +738,7 @@ a:focus {
   right: 0;
 }
 
+
 .info_section {
   position: relative;
   background-color: #2d2d2d;
@@ -821,11 +852,6 @@ a:focus {
   color: #cbc9c9;
 }
 
-.img-box img{
-    height: 50px;
-    width: 50px;
-}
-
 .heading_ingredient_container {
   max-width: 1200px;
   margin: 0 auto;
@@ -847,12 +873,137 @@ a:focus {
 
 
 .centered-bold {
-  font-weight: bold;
   margin: 0;
   display: flex;
   justify-content: center; 
   align-items: center; 
   text-align: center; 
   height: 100%; 
+}
 
+@media (max-width: 992px) {
+  .user_option {
+      justify-content: center;
+      margin-left: 0;
+      margin-top: 10px;
+}
+
+  .custom_nav-container {
+      flex-direction: row;
+  }
+
+  .custom_nav-container .navbar-nav {
+      align-items: center;
+  }
+
+  #navbarSupportedContent .navbar-nav .nav-link {
+      margin: 5px 0;
+  }
+
+  .slider_section .detail-box {
+      padding-left: 0;
+  }
+
+  .slider_section .detail-box h1 {
+      font-size: 3rem;
+  }
+
+  .slider_section .img-box {
+      padding: 0;
+  }
+
+  .saving_section .row {
+      flex-direction: column-reverse;
+  }
+
+  .saving_section .detail-box {
+
+      margin-bottom: 30px;
+  }
+
+  .client_section .box {
+      margin: 15px 25px;
+  }
+
+  .client_section .carousel_btn-box {
+      display: flex;
+      justify-content: center;
+      margin-top: 45px;
+  }
+
+  .client_section .carousel-control-prev,
+  .client_section .carousel-control-next {
+      position: unset;
+      margin: 0 2.5px;
+      width: 45px;
+      height: 45px;
+  }
+}
+@media (max-width: 1120px) {
+  .saving_section .detail-box {
+      padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .hero_area {
+      padding: 0 25px;
+  }
+
+  .slider_section .img-box {
+      margin-bottom: 45px;
+  }
+
+  .saving_section,
+  .gift_section {
+      padding-left: 25px;
+      padding-right: 25px;
+  }
+
+  .gift_section .box {
+      padding: 45px 0;
+  }
+
+  .gift_section .img-box {
+      padding: 0 15px;
+      margin-bottom: 45px;
+  }
+
+  .info_section .row>div {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+  }
+
+  .info_section {
+      margin: 0 25px 25px;
+  }
+
+
+}
+
+@media (max-width: 576px) {
+  .contact_section {
+      padding-left: 25px;
+      padding-right: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .saving_section .detail-box,
+  .gift_section .detail-box {
+      padding: 0 5px;
+  }
+}
+
+@media (max-width: 420px) {}
+
+@media (max-width: 376px) {}
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1170px;
+  }
 }
